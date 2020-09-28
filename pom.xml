@@ -142,6 +142,22 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+                 
+                 <!--集成maven findbugs-->
+         <plugin>
+
+         <groupId>org.codehaus.mojo</groupId>
+         <artifactId>findbugs-maven-plugin</artifactId>
+         <version>3.0.1</version>
+         <configuration>
+          <threshold>High</threshold>
+          <effort>Default</effort>
+          <findbugsXmlOutput>true</findbugsXmlOutput>
+          <xmlOutput>true</xmlOutput>
+
+          <findbugsXmlOutputDirectory>analysisResult/analysis-${maven.build.timestamp}</findbugsXmlOutputDirectory>
+         </configuration>
+         </plugin>
         </plugins>
 
         <finalName>zhibing_mybatis</finalName>
