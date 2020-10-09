@@ -8,6 +8,10 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd
 
 	<context:property-placeholder location="classpath:config.properties" />
 
+<<<<<<< HEAD
 	<context:component-scan base-package="rml.service" />
+=======
+	<context:component-scan base-package="sy.service" />
+>>>>>>> parent of 75adefe... deleted
 
 </beans>
